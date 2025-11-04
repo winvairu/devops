@@ -1,0 +1,23 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Путь к вашему Dockerfile для приложения
+    networks:
+      - app-network
+    expose:
+      - "81"  # Контейнер будет слушать на порту 81 внутри сети, без маппинга на хост
+
+  nginx:
+    image: nginx:stable-perl
+    ports:
+      - "80:8080"  # Маппинг порта 80 на хосте на порт 8080 в контейнере
+    networks:
+      - app-network
+    volumes:
+      - /Volumes/winvairu/cranbero/DO5_SimpleDocker-1/src/part_6/nginx.conf:/etc/nginx/nginx.conf:ro  # Прокинем конфигурацию nginx
+
+networks:
+  app-network:
+    driver: bridge
+
