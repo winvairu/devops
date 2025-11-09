@@ -87,7 +87,7 @@
 
 	![MacDown Screenshot](img/screenshot_2024_09_08_at_18_55_15.png)
 	
-	![MacDown Screenshot](/Volumes/winvairu/cranbero/DO6_CICD-1/src/img/screenshot_2024_09_08_at_21_27_45.png)
+	![MacDown Screenshot](img/screenshot_2024_09_08_at_21_27_45.png)
 	
 * Возникла проблема с копированием в /usr/local/bin
 
