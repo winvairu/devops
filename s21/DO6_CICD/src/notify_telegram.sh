@@ -1,7 +1,7 @@
 #!/bin/bash
 
-TELEGRAM_TOKEN="7452227578:AAHQaaFAb4lT3JWvpUN9_stJQ0wqYo436nk"
-CHAT_ID="354871622"
+TELEGRAM_TOKEN="********************************************************"
+CHAT_ID="******************"
 CI_JOB_STATUS=$1
 
 if [ -z "$CI_JOB_STATUS" ]; then
